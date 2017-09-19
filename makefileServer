@@ -1,0 +1,30 @@
+RMIREGISTRY = rmiregistry 5000&
+J = java
+FLAGS = -Djava.security.policy=policy
+SERVER = logic.MarketplaceServer
+export CLASSPATH:= ./out/:./out/*
+
+all:
+	cd main/storage; make
+	cd main/model/data/transfer; make
+	cd main/model/data/access; make
+	cd main/model/authorize; make
+	cd main/model/logic; make
+	cd main/controller/common; make
+	cd main/controller/user; make
+	cd main/view/menu; make
+	cd main/view/factory; make
+	cd main/view/commands; make
+	cd main/controller/entry; make
+	cd main/view/entry; make
+	make -f makefileServer run-registry
+
+run-registry:
+	$(RMIREGISTRY)
+	make -f makefileServer run-server
+
+run-server:
+	$(J) $(FLAGS) $(SERVER)
+
+clean:
+	rm -rf  ./out/*

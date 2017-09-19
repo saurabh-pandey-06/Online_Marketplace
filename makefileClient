@@ -1,0 +1,10 @@
+J = java
+FLAGS = -Djava.security.policy=policy
+CLIENT = entry/MarketplaceView
+export CLASSPATH:= ./out/
+
+all:
+	$(J) $(FLAGS) $(CLIENT)
+
+clean:
+	rm -rf  ./out/*
