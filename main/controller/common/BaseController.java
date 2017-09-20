@@ -24,7 +24,7 @@ public class BaseController {
 
         try{
             // Lookup for remote Marketplace object from the registry
-            marketplace = (Marketplace) Naming.lookup("//in-csci-rrpc01.cs.iupui.edu:5000/MarketplaceServer");
+            marketplace = (Marketplace) Naming.lookup("MarketplaceServer");
         }catch(Exception e){
             System.out.println("Exception occurred while Remote Object Lookup:");
             e.printStackTrace();

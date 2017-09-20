@@ -38,15 +38,12 @@
     Guarded Suspension, Scoped Locking, Future and Thread-Safe Interface patterns were implemented along with all 
     the functionalities of the System***
 
-## Server Machine ##
-***in-csci-rrpc01.cs.iupui.edu - 10.234.136.55***
-
 ### Steps To Compile and Run: ###
-1. Connect to a session of in-csci-rrpc01.cs.iupui.edu - 10.234.136.55 and checkout latest code from master branch.
+1. Connect to a session and checkout latest code from master branch.
 2. cd csci50700_spring2017_marketplace/
 3. make -f makefileServer (Runs the Makefile for server).
 4. After the server makefile runs, all the classes will be compiled and the server will be ready.
-5. To run the client, open a session on another machine, say in-csci-rrpc02.cs.iupui.edu - 10.234.136.56.
+5. To run the client, open a session on another machine.
 6. cd csci50700_spring2017_marketplace/
 7. make -f makefileClient (Runs the Makefile for client).
 8. User is prompted to either log into the system or to register as a customer. Press 1 and select the login option.
@@ -64,7 +61,7 @@
     Product Quantity: Int(Eg. 10) (Similarly with option 4)
     Product Price: Double (Eg. 800) (Similarly with option 4)***
     Entering above details, system displays the success message.
-12. To run another client, open a session on another machine, say in-csci-rrpc04.cs.iupui.edu - 10.234.136.58.
+12. To run another client, open a session on another machine.
 13. Repeat steps 6 & 7.
 14. Steps 8 and 9 are repeated. However, this time use the following credentials to login as customer.
  * Username : Saurabh.6 and Password : customer6

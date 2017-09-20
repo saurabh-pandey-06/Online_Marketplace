@@ -25,7 +25,7 @@ public class CustomerController {
         try {
 
             // Lookup for remote CustomerMarketplace object from the registry
-            customerMarketplace = (CustomerMarketplace) Naming.lookup("rmi://in-csci-rrpc01.cs.iupui.edu:5000/CustomerMarketplaceServer");
+            customerMarketplace = (CustomerMarketplace) Naming.lookup("CustomerMarketplaceServer");
 
         } catch (Exception e) {
 

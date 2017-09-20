@@ -23,7 +23,7 @@ public class AdminController {
         try {
 
             // Lookup for remote AdminMarketplace object from the registry
-            adminMarketplace = (AdminMarketplace) Naming.lookup("//in-csci-rrpc01.cs.iupui.edu:5000/AdminMarketplaceServer");
+            adminMarketplace = (AdminMarketplace) Naming.lookup("AdminMarketplaceServer");
 
         } catch (Exception e) {
 

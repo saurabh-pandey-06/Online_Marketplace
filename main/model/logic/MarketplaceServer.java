@@ -28,9 +28,9 @@ public class MarketplaceServer {
 			 * CustomerMarketplaceServer - Providing customer specific functionalities.
 			 * AdminMarketplaceServer - Providing administrator specific functionalities.
 			 */
-            String marketplaceServer = "//in-csci-rrpc01.cs.iupui.edu:5000/MarketplaceServer";
-            String customerMarketplaceServer = "//in-csci-rrpc01.cs.iupui.edu:5000/CustomerMarketplaceServer";
-            String adminMarketplaceServer = "//in-csci-rrpc01.cs.iupui.edu:5000/AdminMarketplaceServer";
+            String marketplaceServer = "MarketplaceServer";
+            String customerMarketplaceServer = "CustomerMarketplaceServer";
+            String adminMarketplaceServer = "AdminMarketplaceServer";
 
             /*
              * Creating new instance of a Marketplace, Customer Marketplace
